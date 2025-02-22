@@ -1,0 +1,493 @@
+<style>
+    .contact-section {
+      background-color: #0a0a0e;
+      display: flex;
+      padding-bottom: 41px;
+      align-items: flex-start;
+      overflow: hidden;
+    }
+    
+    .contact-container {
+      align-self: start;
+      z-index: 10;
+      margin-right: -56px;
+      flex: 1 0 0;
+      width: fit-content;
+    }
+    
+    .contact-header {
+      display: flex;
+      margin-left: 22px;
+      width: 321px;
+      max-width: 100%;
+      align-items: stretch;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .decorative-circle {
+      background-color: rgb(255, 247, 247);
+      border-radius: 50%;
+      display: flex;
+      margin: auto 0;
+      padding: 9px;
+      align-items: start;
+      justify-content: center;
+    }
+    
+    .circle-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 26px;
+    }
+    
+    .header-decorations {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    .decoration-top {
+      aspect-ratio: 0.88;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color_dodge;
+    }
+    
+    .decoration-bottom {
+      aspect-ratio: 0.9;
+      object-fit: contain;
+      object-position: center;
+      width: 9px;
+      background-blend-mode: color_dodge;
+      margin-top: 36px;
+      margin-left: 16px;
+    }
+    
+    .main-content {
+      display: flex;
+      margin-top: 20px;
+      align-items: stretch;
+    }
+    
+    .side-decoration {
+      align-self: end;
+      display: flex;
+      margin-top: 29px;
+      margin-right: -24px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .side-image-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      aspect-ratio: 0.804;
+      width: 156px;
+      padding: 46px 31px 123px;
+      align-items: end;
+    }
+    
+    .side-image {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .decoration-element {
+      aspect-ratio: 0.92;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+      margin-bottom: -25px;
+    }
+    
+    .bottom-decoration {
+      aspect-ratio: 0.92;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+      align-self: end;
+      margin-top: 267px;
+    }
+    
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex: 1 0 0;
+      width: fit-content;
+    }
+    
+    .form-decoration-top {
+      aspect-ratio: 0.88;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color_dodge;
+      align-self: center;
+    }
+    
+    .contact-form {
+      border-radius: 20px;
+      background-color: rgba(217, 217, 217, 0.3);
+      display: flex;
+      width: 100%;
+      padding: 23px 53px 44px 11px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .form-header {
+      display: flex;
+      margin-left: 70px;
+      width: 825px;
+      max-width: 100%;
+      align-items: stretch;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .form-title {
+      color: rgb(255, 250, 250);
+      font-size: 32px;
+      font-family:
+        Syncopate,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+      font-weight: 700;
+      line-height: 58px;
+      text-align: center;
+      margin: 0;
+    }
+    
+    .header-decorations {
+      align-self: start;
+      display: flex;
+      align-items: end;
+      gap: 40px 96px;
+    }
+    
+    .header-decorations img {
+      aspect-ratio: 0.92;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+      flex-shrink: 0;
+    }
+    
+    .form-input {
+      border-radius: 30px;
+      background-color: rgba(217, 217, 217, 0.5);
+      width: 100%;
+      padding: 10px 59px;
+      font-family:
+        Syncopate,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+      font-size: 32px;
+      color: rgb(255, 250, 250);
+      font-weight: 700;
+      text-align: center;
+      line-height: 58px;
+      border: none;
+    }
+    
+    .form-group {
+      display: flex;
+      margin: 33px 0 0 67px;
+      width: 839px;
+      max-width: 100%;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .form-label {
+      color: rgb(255, 250, 250);
+      font-size: 32px;
+      font-family:
+        Syncopate,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+      font-weight: 700;
+      text-align: center;
+      line-height: 58px;
+    }
+    
+    .message-container {
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .message-input-container {
+      border-radius: 30px;
+      background-color: rgba(217, 217, 217, 0.5);
+      display: flex;
+      padding: 10px 80px 52px 31px;
+      flex-direction: column;
+      flex: 1 0 0;
+      width: fit-content;
+    }
+    
+    .message-input {
+      background: transparent;
+      resize: none;
+      height: 150px;
+    }
+    
+    .message-decorations {
+      align-self: center;
+      display: flex;
+      margin: 26px 0 0 41px;
+      width: 659px;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    
+    .contact-footer {
+      align-self: end;
+      margin-top: 29px;
+    }
+    
+    .footer-decorations {
+      display: flex;
+      margin-top: 33px;
+      padding: 0 38px;
+      flex-direction: column;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-container {
+        max-width: 100%;
+      }
+    
+      .contact-header {
+        margin-left: 10px;
+      }
+    
+      .decoration-bottom {
+        margin-left: 10px;
+      }
+    
+      .side-image-container {
+        padding: 46px 20px 100px;
+      }
+    
+      .decoration-element {
+        margin-bottom: 10px;
+      }
+    
+      .bottom-decoration {
+        margin-top: 40px;
+        margin-right: 10px;
+      }
+    
+      .contact-form {
+        max-width: 100%;
+        padding: 23px 20px 44px;
+      }
+    
+      .form-input {
+        padding: 10px 20px;
+      }
+    
+      .footer-decorations {
+        padding: 0 20px;
+      }
+    }
+    
+    </style>
+    <section class="contact-section">
+      <div class="contact-container">
+        <header class="contact-header">
+          <div class="decorative-circle">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/40dee2b01902bcf561facd3ceecd06f1c221ac4cead0eb140b87de48396a8f6b"
+              alt=""
+              class="circle-icon"
+            />
+          </div>
+          <div class="header-decorations">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/96fc4f234efd8ba3e81d5fafce8098c1c83c7d889774bc677221e68db8550e9d"
+              alt=""
+              class="decoration-top"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/649fc1644d61500d164968d78ac2e8f73b21d028128d37b071b6570242e9af53"
+              alt=""
+              class="decoration-bottom"
+            />
+          </div>
+        </header>
+    
+        <main class="main-content">
+          <aside class="side-decoration">
+            <div class="side-image-container">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f3d2f96583a5667dcd33a91fbab04b56628d327b03869e139ae3902a3802bb88"
+                alt=""
+                class="side-image"
+              />
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd9bec534640f8259220c74754542d8047fa53b4d2f108d475f6d36038aecb2c"
+                alt=""
+                class="decoration-element"
+              />
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/39209aa0720d9ba71874bca16ba7d055ccc7116a40b85dfa31f2a95f976cdcf9"
+              alt=""
+              class="bottom-decoration"
+            />
+          </aside>
+    
+          <div class="form-container">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/54534caebe05a2ad78b3084dded834846a8d3bc5eaa5af5ffc85ea574939171f"
+              alt=""
+              class="form-decoration-top"
+            />
+    
+            <form class="contact-form">
+              <div class="form-header">
+                <h1 class="form-title">name</h1>
+                <div class="header-decorations">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/7c08f3a7a2c2025559475c8474b23dab3060016340f5dec69c8abc0f6046a06e"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e6a08b73e940e48320bc1c89b1abd93ccfb1ec45c10cb0081b6b29f935fdd146"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b09bae8a040b602e73d7fa4ab6cda7008b5b4f5a8f02fd3ec07b558f26e870d7"
+                    alt=""
+                  />
+                </div>
+              </div>
+    
+              <input
+                type="text"
+                class="form-input name-input"
+                placeholder="enter your name"
+              />
+    
+              <div class="form-group">
+                <label class="form-label">E-mail</label>
+                <div class="label-decorations">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c9b0c3e030461239e2908431f5b15b4053d0efde0d3da0d1440b4b430a35f06"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c0565ce1b415776508c1b2c3f9a7d4ad8ac7533f8dbfdb0d70343b180559f47"
+                    alt=""
+                  />
+                </div>
+              </div>
+    
+              <input
+                type="email"
+                class="form-input email-input"
+                placeholder="enter your mail"
+              />
+    
+              <div class="form-group">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/471c060b549a67ebe9e4be893419d8db661fa0b1d49e7cd029aa1671ec8878f9"
+                  alt=""
+                />
+                <label class="form-label">message</label>
+              </div>
+    
+              <div class="message-container">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/765be75e34f93099d6a4871298906157c1af8adb26a76e6119650596838b2ee5"
+                  alt=""
+                />
+                <div class="message-input-container">
+                  <textarea
+                    class="form-input message-input"
+                    placeholder="enter your message"
+                  ></textarea>
+                  <div class="message-decorations">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/97173297a4756bcc4e2098b706e98d646f58fbd9efc03b7c4d8cb11801b8fd94"
+                      alt=""
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b44700601998bc668962b4296421954dc093e0cdd588d15a6375361e85014a0"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    
+      <footer class="contact-footer">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef12ba710c13ce06866579d4ba4890fc8bb5f08959fdb2cad4c9c6e8a2153c71"
+          alt=""
+        />
+        <div class="footer-decorations">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5387b2b51256637b97b76f727f5b2d544cfcecf7a09eda18aab7b80fc671676"
+            alt=""
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6de66b4bb326c173f411ebcb93755881fe3184809fe31748900b2ed3e65632f"
+            alt=""
+          />
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/0b12549b2acd422c0b3cb2df31ec19918b8a6fdbae8a77bbf59c6f2a9b0f83e3"
+          alt=""
+        />
+      </footer>
+    </section>
+    

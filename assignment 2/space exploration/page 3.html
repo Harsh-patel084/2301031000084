@@ -1,0 +1,225 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Coustard&display=swap");
+    
+    .news-section {
+      background-color: #0a0a0e;
+      padding-left: 22px;
+      padding-bottom: 41px;
+      overflow: hidden;
+    }
+    
+    .news-container {
+      gap: 20px;
+      display: flex;
+    }
+    
+    .news-content {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+      margin-left: 0;
+    }
+    
+    .news-header {
+      display: flex;
+      width: 318px;
+      max-width: 100%;
+      align-items: start;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .icon-circle {
+      background-color: rgb(255, 247, 247);
+      border-radius: 50%;
+      display: flex;
+      margin-top: 18px;
+      padding: 9px 8px;
+      align-items: start;
+      justify-content: center;
+    }
+    
+    .icon-primary {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 26px;
+    }
+    
+    .icon-secondary {
+      aspect-ratio: 0.88;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color_dodge;
+      flex-shrink: 0;
+    }
+    
+    .news-content-wrapper {
+      display: flex;
+      padding-left: 69px;
+      flex-direction: column;
+      font-family:
+        Coustard,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+      font-size: 32px;
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+      line-height: 58px;
+    }
+    
+    .content-icon {
+      aspect-ratio: 0.9;
+      object-fit: contain;
+      object-position: center;
+      width: 9px;
+      background-blend-mode: color_dodge;
+      align-self: center;
+      margin-left: 36px;
+    }
+    
+    .news-text {
+      align-self: start;
+    }
+    
+    .news-title {
+      font-family:
+        "Black Han Sans",
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+      font-size: 48px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .news-description {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    
+    .footer-icon {
+      aspect-ratio: 0.96;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+      margin-top: auto;
+      margin-bottom: auto;
+      flex-shrink: 0;
+    }
+    
+    .news-image {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      line-height: normal;
+      width: 50%;
+      margin-left: 20px;
+    }
+    
+    .main-image {
+      aspect-ratio: 0.71;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      margin-top: 18px;
+      flex-grow: 1;
+    }
+    
+    @media (max-width: 991px) {
+      .news-section {
+        padding-left: 20px;
+      }
+    
+      .news-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .news-content {
+        width: 100%;
+      }
+    
+      .news-content-wrapper {
+        max-width: 100%;
+        padding-left: 20px;
+      }
+    
+      .news-text {
+        max-width: 100%;
+      }
+    
+      .news-image {
+        width: 100%;
+      }
+    
+      .main-image {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    </style>
+    
+    <section class="news-section">
+      <div class="news-container">
+        <article class="news-content">
+          <div class="news-header">
+            <div class="icon-circle">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/40dee2b01902bcf561facd3ceecd06f1c221ac4ceecd06f1c221ac4cead0eb140b87de48396a8f6b?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+                class="icon-primary"
+                alt="News icon"
+              />
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/7f287943f13ef83182a06eaf77bdaee6674cf44ccc5d0db40b1beedd19459445?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              class="icon-secondary"
+              alt="Decorative element"
+            />
+          </div>
+          <div class="news-content-wrapper">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/16116ec6d8e1c2d0eb78fbd821763466774b9361ed8eddf31e19c6a53558ec2b?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              class="content-icon"
+              alt="Content marker"
+            />
+            <div class="news-text">
+              <h1 class="news-title">The Chandrayaan-3</h1>
+              <p class="news-description">
+                The Chandrayaan-3 mission is a significant part of India's space
+                exploration efforts, led by the Indian Space Research Organisation
+                (ISRO). It is a follow-up to the earlier Chandrayaan-3 mission,
+                focusing on achieving a soft landing on the Moon's surface. Below is
+                an overview of the mission with key topics:
+              </p>
+            </div>
+          </div>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f46c1ba1ef06c81bcdd524b4d476a73a765776fb730dbc050fe6e7d50e0556f7?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+            class="footer-icon"
+            alt="Footer decoration"
+          />
+        </article>
+        <div class="news-image">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/70479a6a17879fb3995b0bb85ed8f8afac0a0c0764c4b892236fe79193a253b2?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+            class="main-image"
+            alt="Chandrayaan-3 mission"
+          />
+        </div>
+      </div>
+    </section>
+    
