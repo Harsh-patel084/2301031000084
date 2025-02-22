@@ -1,0 +1,172 @@
+<style>
+    .home {
+      background-color: #fff;
+      padding-bottom: 9px;
+      overflow: hidden;
+    }
+    
+    .stars-section {
+      background-color: #0a0a0e;
+      display: flex;
+      width: 100%;
+      padding: 0 22px 115px;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+    }
+    
+    .stars-container {
+      align-self: stretch;
+      display: flex;
+      width: 100%;
+      align-items: stretch;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .stars-group {
+      display: flex;
+      align-items: stretch;
+      gap: 40px 100px;
+    }
+    
+    .circle-icon {
+      background-color: #fff7f7;
+      border-radius: 50%;
+      display: flex;
+      margin: auto 0;
+      padding: 9px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    
+    .circle-icon-image {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 26px;
+    }
+    
+    .star-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .star-icon-large {
+      aspect-ratio: 0.88;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color-dodge;
+    }
+    
+    .star-icon-small {
+      aspect-ratio: 0.9;
+      object-fit: contain;
+      object-position: center;
+      width: 9px;
+      background-blend-mode: color-dodge;
+      margin-top: 36px;
+      margin-left: 16px;
+    }
+    
+    .floating-star {
+      aspect-ratio: 1.12;
+      object-fit: contain;
+      object-position: center;
+      width: 48px;
+      margin: auto 0;
+      flex-shrink: 0;
+    }
+    
+    .bottom-star {
+      aspect-ratio: 0.88;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color-dodge;
+      margin-top: 20px;
+    }
+    
+    .banner-image {
+      aspect-ratio: 1.77;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      margin: 16px 0 -23px;
+      max-width: 1362px;
+    }
+    
+    @media (max-width: 991px) {
+      .stars-section {
+        max-width: 100%;
+        padding: 0 20px 100px;
+      }
+    
+      .stars-container {
+        max-width: 100%;
+      }
+    
+      .star-icon-small {
+        margin-left: 10px;
+      }
+    
+      .banner-image {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    
+    </style>
+    <section class="home">
+      <section class="stars-section">
+        <div class="stars-container">
+          <div class="stars-group">
+            <div class="circle-icon">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/40dee2b01902bcf561facd3ceecd06f1c221ac4cead0eb140b87de48396a8f6b?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+                class="circle-icon-image"
+                alt="Circle icon"
+              />
+            </div>
+            <div class="star-icons">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/0aecdd7a6da76c658abb9685ad29b9a3dd7fa85e2cd608b79e156a741046ff6e?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+                class="star-icon-large"
+                alt="Large star"
+              />
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/16ed4220fa5e31fc6baab08888eb2faaca3b122cc43400d3201fbd68e27737ce?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+                class="star-icon-small"
+                alt="Small star"
+              />
+            </div>
+          </div>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b911f34bee8ece767971fb9620f2dbea9f2f9ec707448ae71e701a31c7c1725?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+            class="floating-star"
+            alt="Floating star"
+          />
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/32b16a291cb2bd36693f4c2161ebe3cf2a287a15765479d4e047134e07c8af09?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+          class="bottom-star"
+          alt="Bottom star"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3046e42c9eccebb6619354f0af83bd5ff5fefcf9f36661aaf3bf192bd21e681?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+          class="banner-image"
+          alt="Banner"
+        />
+      </section>
+    </section>
+    
