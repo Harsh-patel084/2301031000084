@@ -1,0 +1,366 @@
+<style>
+    .news-container {
+      background-color: #0a0a0e;
+      display: flex;
+      padding-bottom: 17px;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+    }
+    
+    .news-header {
+      display: flex;
+      width: 100%;
+      max-width: 1384px;
+      align-items: stretch;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .header-controls {
+      display: flex;
+      align-items: stretch;
+      gap: 40px 100px;
+    }
+    
+    .control-circle {
+      background-color: rgb(255, 247, 247);
+      border-radius: 50%;
+      display: flex;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding: 9px;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+    }
+    
+    .control-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 26px;
+    }
+    
+    .decorative-elements {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    .decorative-icon-1 {
+      aspect-ratio: 0.88;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color_dodge;
+    }
+    
+    .decorative-icon-2 {
+      aspect-ratio: 0.9;
+      object-fit: contain;
+      object-position: center;
+      width: 9px;
+      background-blend-mode: color_dodge;
+      margin-top: 36px;
+      margin-left: 16px;
+    }
+    
+    .header-decoration {
+      aspect-ratio: 1.12;
+      object-fit: contain;
+      object-position: center;
+      width: 48px;
+      margin-top: auto;
+      margin-bottom: auto;
+      flex-shrink: 0;
+    }
+    
+    .content-decoration {
+      aspect-ratio: 0.88;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color_dodge;
+      margin-top: 20px;
+    }
+    
+    .news-content {
+      align-self: stretch;
+      display: flex;
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 28px;
+      flex-direction: column;
+    }
+    
+    .article-header {
+      align-self: start;
+      display: flex;
+      align-items: stretch;
+      gap: 23px;
+      font-family:
+        Coustard,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+      font-size: 40px;
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+      line-height: 72px;
+      flex-wrap: wrap;
+    }
+    
+    .article-title {
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+      margin: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+    
+    .title-decoration {
+      aspect-ratio: 0.92;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+      align-self: end;
+      margin-top: 248px;
+      flex-shrink: 0;
+    }
+    
+    .article-content {
+      align-self: end;
+      display: flex;
+      margin-top: 6px;
+      width: 100%;
+      max-width: 1295px;
+      align-items: stretch;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .side-decorations {
+      align-self: start;
+      display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: end;
+    }
+    
+    .side-icon-1 {
+      aspect-ratio: 0.92;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+    }
+    
+    .side-icon-2 {
+      aspect-ratio: 0.92;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+      align-self: start;
+      margin-top: 71px;
+    }
+    
+    .side-icon-3 {
+      aspect-ratio: 0.92;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+      background-blend-mode: color_dodge;
+      margin-top: 126px;
+    }
+    
+    .article-image {
+      aspect-ratio: 1.68;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+    }
+    
+    .footer-decorations {
+      align-self: end;
+      display: flex;
+      margin-top: 267px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .footer-icon {
+      aspect-ratio: 0.96;
+      object-fit: contain;
+      object-position: center;
+      width: 23px;
+      background-blend-mode: color_dodge;
+      align-self: center;
+    }
+    
+    .footer-logo {
+      aspect-ratio: 0.84;
+      object-fit: contain;
+      object-position: center;
+      width: 157px;
+      margin-top: 31px;
+    }
+    
+    @media (max-width: 991px) {
+      .news-header {
+        max-width: 100%;
+      }
+    
+      .decorative-icon-2 {
+        margin-left: 10px;
+      }
+    
+      .news-content {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    
+      .article-title {
+        max-width: 100%;
+      }
+    
+      .title-decoration {
+        margin-top: 40px;
+      }
+    
+      .article-content {
+        max-width: 100%;
+      }
+    
+      .side-icon-2 {
+        margin-top: 40px;
+      }
+    
+      .side-icon-3 {
+        margin-right: 10px;
+        margin-top: 40px;
+      }
+    
+      .article-image {
+        max-width: 100%;
+      }
+    
+      .footer-decorations {
+        margin-top: 40px;
+      }
+    }
+    
+    </style>
+    <article class="news-container">
+      <header class="news-header">
+        <div class="header-controls">
+          <div class="control-circle">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/40dee2b01902bcf561facd3ceecd06f1c221ac4cead0eb140b87de48396a8f6b?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Control icon"
+              class="control-icon"
+            />
+          </div>
+          <div class="decorative-elements">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/cd2e72e50e458a9ee2236352ab44cbb750ff1c1671e21b642d6fd1d03a3a1bde?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Decorative element"
+              class="decorative-icon-1"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d57683882e429ee4c9675c274727df5cdba62eb7b84756f6fd66c46333b068e2?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Decorative element"
+              class="decorative-icon-2"
+            />
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b911f34bee8ece767971fb9620f2dbea9f2f9ec707448ae71e701a31c7c1725?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+          alt="Header decoration"
+          class="header-decoration"
+        />
+      </header>
+    
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfc8bb95390dbdf61a9cb0521ca46e32695f0851a648a5788adea5d1e825b46c?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+        alt="Decorative element"
+        class="content-decoration"
+      />
+    
+      <section class="news-content">
+        <div class="article-header">
+          <h1 class="article-title">
+            Mars Orbiter Mission (MOM), unofficially known as Mangalyaan (Sanskrit:
+            Maṅgala 'Mars', Yāna 'Craft, Vehicle'), is a space probe orbiting Mars
+            since 24 September 2014. It was launched on 5 November 2013 by the
+            Indian Space Research Organisation (ISRO).
+          </h1>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/05e1f596248f49a624cb48a046326c011bdc69694027a4e13177bbaef6b881ed?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+            alt="Decorative element"
+            class="title-decoration"
+          />
+        </div>
+    
+        <div class="article-content">
+          <div class="side-decorations">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/6845bbcb12b10fcebbaa3981aa3e72819510233a081096afc60960354dfb1e9e?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Decorative element"
+              class="side-icon-1"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/6be44902f30446965f3a81b3b0d511ae1a8f4d139a82112bb7955a1f8a4a7efc?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Decorative element"
+              class="side-icon-2"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4b8c5c9d3fa75bf98cba8ea9d73da2a944c6800a9ede9dc7cbb82a741ab9193?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Decorative element"
+              class="side-icon-3"
+            />
+          </div>
+    
+          <figure class="main-image">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c0eb8812b345b1c05f0c29489905e9ff1f512a0219619c5522306929f5bfc76a?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Mars Orbiter Mission illustration"
+              class="article-image"
+            />
+          </figure>
+    
+          <div class="footer-decorations">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/01cd790b241c3c97514ecd6369303a228efd9978b26e57d0fd076bf41234d9f6?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Footer decoration"
+              class="footer-icon"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a90364ed900668298cfebf449ccc69d774c83a7ae3cd2e6c28a1043e0f7c63b1?placeholderIfAbsent=true&apiKey=b226e1130ffa4f44a1cb3467db083bd4"
+              alt="Footer decoration"
+              class="footer-logo"
+            />
+          </div>
+        </div>
+      </section>
+    </article>
+    
